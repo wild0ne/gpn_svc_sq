@@ -4,7 +4,7 @@ This document and repo helps to start rapidly with sonarqube community edition.
 
 ## 2. Starting SQ
 
-Firstly run sonar qube server with script `run-server.sh` assuming docker preinstalled.
+Firstly run sonar qube server with script `run-server.sh` assuming docker preinstalled. Wait for a while until it's ready.
 
 ## 3. Change default password (if required)
 
@@ -16,4 +16,26 @@ You cand do it manually in browser, or automatically with script `./make-project
 
 ## 5. Restore rules
 
-Run scripts in `./bind-rules.sh`. It restores ruleset `GPN SVC way` that is eligable to check all incoming code.
+Run script `./restore-rules.sh`. It restores ruleset `GPN SVC way` that is eligable to check all incoming code.
+
+## 6. Bind rules to project (named prj)
+
+Run script `./bind-rules.sh`. It applies ruleset `GPN SVC way` to project `prj`
+
+## 7. Run scanner
+
+### 7.1 Run scanner for Java language
+
+...
+
+### 7.2 Run scanner for C# language
+
+...
+
+### 7.3 Run scanner for C++ language
+
+SonarQube for C++ analyzer requires **developer edition** at least. So, the whole example is omitted.
+
+### 7.4 Run scanner for any of: python, typescript, javascript, golang
+
+Run script `./run-scanner.sh`.
