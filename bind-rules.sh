@@ -1,4 +1,5 @@
-# bind rules to project
+#!/bin/bash
+# Bind rules to project
 echo SQ version is:
 curl http://localhost:9000/api/server/version
 echo /n

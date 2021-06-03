@@ -1,4 +1,5 @@
-# restoring rules
+#!/bin/bash
+# Restoring rules
 echo SQ version is:
 curl http://localhost:9000/api/server/version
 echo /n

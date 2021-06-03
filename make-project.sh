@@ -1,4 +1,5 @@
-# making new project named prj
+#!/bin/bash
+# Making new project named prj
 echo SQ version is:
 curl http://localhost:9000/api/server/version
 echo /n
