@@ -40,7 +40,9 @@
 
 ### 7.2 Запуск сканера для языка C#
 
-...
+Установите .NET 5.0 SDK (например, https://dotnet.microsoft.com/download/dotnet)
+
+Запустите скрипт `run-scanner-dotnet.cmd`
 
 ### 7.3 Запуск сканера для языка C++
 

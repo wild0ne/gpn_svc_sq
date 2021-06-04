@@ -1,2 +1,11 @@
 # sonar scanner work folder
 **/.scannerwork/**
+
+# binaries
+**/bin/**
+
+# obj
+**/obj/**
+
+# sonarqube internals
+**/.sonarqube/**
