@@ -1,41 +1,45 @@
-## 1. Intro
+## 1. Введение
 
-This document and repo helps to start rapidly with sonarqube community edition.
+Этот документ и репозиторий помогают быстро начать работу с инструментом SonarQube Community Edition в среде Linux.
 
-## 2. Starting SQ
+## 2. Запуск
 
-Firstly run sonar qube server with script `run-server.sh` assuming docker preinstalled. Wait for a while until it's ready.
+Запустите сервер скриптом `run-server.sh`, инструмент `docker` должен быть предустановлен.
 
-## 3. Change default password (if required)
+Убедиться в успешности запуска сервера можно, перейдя по адресу
 
-Navigate to 'http://localhost:9000/' in your browser and change admin password. All scripts in this repo uses defaults (admin/admin).
+- https://localhost:9000/
 
-## 4. Create new project in SQ
+## 3. Измените пароль администратора
 
-You cand do it manually in browser, or automatically with script `./make-project.sh`. This script creates project named `prj`. All scripts in this repo perform opertaions with project named `prj`.
+Перейдите по адресу http://localhost:9000/ в браузере и измените пароль (при необходимости). Все скрипты в этом репозитории настроены на пароль по умолчанию.
 
-## 5. Restore rules
+## 4. Создайте новый проект в SQ
 
-Run script `./restore-rules.sh`. It restores ruleset `GPN SVC way` that is eligable to check all incoming code.
+Вы можете сделать это вручную в браузере, либо автоматически, при помощи скрипта `./make-project.sh`. Скрипт создает проект под именем `prj`. Все скрипты в этом репозиории работают с проектом под именем `prj`.
 
-## 6. Bind rules to project (named prj)
+## 5. Восстановите правила
 
-Run script `./bind-rules.sh`. It applies ruleset `GPN SVC way` to project `prj`
+Запустите `./restore-rules.sh`. Скрипт восстанавливает набор правил `GPN SVC way`, правомерный для проверки всего входящего кода.
 
-## 7. Run scanner
+## 6. Привяжите правила к проекту
 
-### 7.1 Run scanner for Java language
+Выполните скрипт `./bind-rules.sh`. Он выполняет привязку набора правил `GPN SVC way` к проекту `prj`
+
+## 7. Запуск сканера
+
+### 7.1 Запуск сканера для языка Java
 
 ...
 
-### 7.2 Run scanner for C# language
+### 7.2 Запуск сканера для языка C#
 
 ...
 
-### 7.3 Run scanner for C++ language
+### 7.3 Запуск сканера для языка C++
 
-SonarQube for C++ analyzer requires **developer edition** at least. So, the whole example is omitted.
+Использование анализатора SonarQube для языка C++ требует редакции **developer edition** как минимум. Поэтому в текущем примере такой запуск не рассматривается.
 
-### 7.4 Run scanner for any of: python, typescript, javascript, golang
+### 7.4 Запуск сканера для языков: python, typescript, javascript, golang
 
-Run script `./run-scanner.sh`.
+Запустите `./run-scanner.sh`.
