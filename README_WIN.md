@@ -42,6 +42,10 @@
 
 Установите .NET 5.0 SDK (например, https://dotnet.microsoft.com/download/dotnet)
 
+Установите `dotnet-sonarscanner`:
+
+- `dotnet tool install --global dotnet-sonarscanner`
+
 Запустите скрипт `run-scanner-dotnet.cmd`
 
 ### 7.3 Запуск сканера для языка C++

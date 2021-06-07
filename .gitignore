@@ -9,3 +9,6 @@
 
 # sonarqube internals
 **/.sonarqube/**
+
+# visual studio
+**/.vs/**
