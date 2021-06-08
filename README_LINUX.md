@@ -30,7 +30,21 @@
 
 ### 7.1 Запуск сканера для языка Java
 
-...
+Установите JDK, например, вот так:
+
+- `sudo apt-get install openjdk-8-jdk`
+
+#### 7.1.1 Сборка при помощи Ant
+
+Установите Ant, например, вот так:
+
+- `sudo snap install --classic ant`
+
+Скачайте задачу `sonar` для `ant` (https://binaries.sonarsource.com/Distribution/sonarqube-ant-task/sonarqube-ant-task-2.7.1.1951.jar), расположите файл в папке `src/java/lib`. Измените имя файла на `sonarqube-ant-task.jar`.
+
+Запустите скрипт
+
+- `run-scanner-java-ant.sh`
 
 ### 7.2 Запуск сканера для языка C#
 

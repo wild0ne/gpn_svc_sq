@@ -12,3 +12,9 @@
 
 # visual studio
 **/.vs/**
+
+# java libs
+src/java/lib/**
+
+# java build output
+src/java/target/**
