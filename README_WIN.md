@@ -36,7 +36,18 @@
 
 ### 7.1 Запуск сканера для языка Java
 
-...
+Установите JDK.
+
+#### 7.1.1 Сборка при помощи Ant
+
+Установите Apache Ant (http://ant.apache.org/). Рекомендутеся установить системную переменную `ANT_HOME`, а также добавить в `PATH` путь `%ANT_HOME%\bin`.
+
+Скачайте задачу `sonar` для `ant` (https://binaries.sonarsource.com/Distribution/sonarqube-ant-task/sonarqube-ant-task-2.7.1.1951.jar), расположите файл в папке `src/java/lib`. Измените имя файла на `sonarqube-ant-task.jar`.
+
+Запустите скрипт
+
+- `run-scanner-java-ant.cmd`
+
 
 ### 7.2 Запуск сканера для языка C#
 

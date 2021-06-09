@@ -19,6 +19,8 @@
 	<property name="sonar.sources" value="." />
 	<property name="sonar.java.binaries" value="target" />
 	<property name="sonar.sourceEncoding" value="UTF-8" />
+	<property name="sonar.login" value="admin" />
+	<property name="sonar.password" value="admin" />
 	
 	<!-- ========= Define "regular" targets: clean, compile, ... ========= -->
 	<target name="clean">
