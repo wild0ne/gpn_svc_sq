@@ -3,4 +3,4 @@ echo off
 echo Node.js version is
 node --version
 echo Starting sonar qube scanner
-sonar-scanner -Dsonar.host.url=http://localhost:9000 -Dsonar.login=admin -Dsonar.password=admin -Dsonar.projectKey=prj -Dsonar.sources=src
+sonar-scanner -Dsonar.host.url=http://localhost:9000 -Dsonar.login=admin -Dsonar.password=admin -Dsonar.projectKey=prj -Dsonar.sources=src/golang,src/javascript,src/python,src/typescript
